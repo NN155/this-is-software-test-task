@@ -2,7 +2,7 @@
 
 A modern web application built with Next.js 15, React, Material-UI, and React Query for viewing and saving user information with weather data.
 
-## 📋 Task Overview
+## Task Overview
 
 The application allows users to:
 - View random user information fetched from API
@@ -31,14 +31,14 @@ The application allows users to:
 -  **Store saved user in IndexedDB instead of localStorage** - full IndexedDB implementation
 -  **Responsive design** - looks good on mobile and desktop devices
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Next.js 15** - React framework for production
 - **React** - JavaScript library for building user interfaces
 - **Material-UI (MUI)** - React component library for faster development
 - **React Query** - Data fetching and state management library
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Development Mode
 
@@ -71,13 +71,13 @@ npm run build
 npm start
 ```
 
-## 📝 Available Scripts
+## Available Scripts
 
 - `npm run dev` - Runs the app in development mode
 - `npm run build` - Builds the app for production
 - `npm start` - Runs the built app in production mode
 
-## 📦 Project Structure
+## Project Structure
 
 ```
 ├── src/
@@ -93,10 +93,10 @@ npm start
 └── package.json      # Project dependencies and scripts
 ```
 
-## 🔧 Development
+## Development
 
 This project uses Next.js 15 with the latest React features. Make sure you have Node.js installed on your machine.
 
-## 📄 License
+## License
 
 This project is created as a test task
