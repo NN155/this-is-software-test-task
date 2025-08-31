@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Test Task Project
 
-## Getting Started
+A modern web application built with Next.js 15, React, Material-UI, and React Query for viewing and saving user information with weather data.
 
-First, run the development server:
+## 📋 Task Overview
 
+The application allows users to:
+- View random user information fetched from API
+- Display current weather for each user's location
+- Save users to local storage (IndexedDB)
+- View saved users in a separate page
+- Load more users with pagination
+
+### Features Implemented
+
+**Main Route:**
+- User cards displaying: name, gender, profile image, location, email
+- Weather information: icon, current temperature, min/max for the day
+- Save button to store user in IndexedDB
+- Weather button to show detailed weather in modal
+- Load more users functionality
+
+**Saved Users Route:**
+- List of saved users with similar card design
+- Remove button instead of save button
+- Weather functionality available
+
+**Bonus Points Implemented:**
+-  **Update current temperature periodically (every 5 minutes)** - implemented with React Query automatic refetch
+-  **Use Next.js API for handling all 3rd party requests** - custom API routes for users and weather
+-  **Store saved user in IndexedDB instead of localStorage** - full IndexedDB implementation
+-  **Responsive design** - looks good on mobile and desktop devices
+
+## 🛠 Tech Stack
+
+- **Next.js 15** - React framework for production
+- **React** - JavaScript library for building user interfaces
+- **Material-UI (MUI)** - React component library for faster development
+- **React Query** - Data fetching and state management library
+
+## 🚀 Getting Started
+
+### Development Mode
+
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Install dependencies:
+```bash
+npm install
+```
 
-## Learn More
+2. Build the application:
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+3. Start the production server:
+```bash
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Available Scripts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `npm run dev` - Runs the app in development mode
+- `npm run build` - Builds the app for production
+- `npm start` - Runs the built app in production mode
 
-## Deploy on Vercel
+## 📦 Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+├── src/
+│   ├── app/          # Next.js App Router pages and API routes
+│   ├── components/   # Reusable UI components
+│   ├── hooks/        # Custom React hooks
+│   ├── services/     # API and data services
+│   ├── shared/       # Shared utilities and types
+│   ├── providers/    # Context providers
+│   ├── config/       # Configuration files
+│   └── utils/        # Utility functions
+├── public/           # Static assets
+└── package.json      # Project dependencies and scripts
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🔧 Development
+
+This project uses Next.js 15 with the latest React features. Make sure you have Node.js installed on your machine.
+
+## 📄 License
+
+This project is created as a test task
